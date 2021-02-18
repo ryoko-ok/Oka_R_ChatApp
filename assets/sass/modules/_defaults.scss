@@ -26,6 +26,76 @@ a {
     display: block;
     color: white;
     // text-decoration: none;
+}
+
+h1 {
+    padding: 10px 0;
+}
+
+h2 {
+    padding: 20px;
+}
+
+.new-message {
+    padding: 10px;
+    margin: 5px;
+    background-color: #D2D2CD;
+    color: gray;
+    border-radius: 8px;
+    float: left;
+    clear: both;
+}
+
+.my-message {
+    background-color: white;
+    float: gray;
+}
+
+.message-wrapper {
+
+    button {
+        width: auto;
+        margin: 0;
+    }
+    
+    textarea {
+        color: #333;
+        margin: 0;
+        border-radius: 4px;
+        width: 300px;
+    }
+
+    
+}
+
+.mainCon {
+    height: 60%;
+    padding: 5rem;
+    text-align: center;
+}
+
+input, textarea {
+    padding: 0.7rem;
+    margin: 0.6rem;
+    color: #333;
+    border-radius: 4px;
+    width: 300px;
+}
+
+button {
+    background-color: #D2D2CD;
+    padding: 0.7rem;
+    margin: 0.6rem;
+    color: #fff;
+    border-radius: 4px;
+    width: 300px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: gray;
+    }
+}
+
 
     margin: 1rem 0;
 }

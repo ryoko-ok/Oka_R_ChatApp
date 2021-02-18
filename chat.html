@@ -37,9 +37,43 @@
     })
  </script>
 
+<script src = "/socket.io/socket.io.js"></script>
+
+<script>
+    var socket = io();
+    function setUsername() {
+       socket.emit('setUsername', document.getElementById('name').value);
+    };
+    var user;
+    socket.on('userExists', function(data) {
+       document.getElementById('error-container').innerHTML = data;
+    });
+    socket.on('userSet', function(data) {
+       user = data.username;
+       document.body.innerHTML = '<input type = "text" id = "message">\
+       <button type = "button" name = "button" onclick = "sendMessage()">Send</button>\
+       <div id = "message-container"></div>';
+    });
+    function sendMessage() {
+       var msg = document.getElementById('message').value;
+       if(msg) {
+          socket.emit('msg', {message: msg, user: user});
+       }
+    }
+    socket.on('newmsg', function(data) {
+       if(user) {
+          document.getElementById('message-container').innerHTML += '<div><b>' + 
+             data.user + '</b>: ' + data.message + '</div>'
+       }
+    })
+ </script>
+
+
 <body>
     <main id="app">
-        <h2>This is where my awesome chat messages will show up</h2>
+        <div class="mainCon">
+
+        <h2>Chat over a cup of coffee</h2>
 
         <!-- vue custom message component goes here -->
         <section class="messages">
@@ -50,8 +84,17 @@
 
         <section class="message-wrapper">
             <textarea v-model="message" class="text-message"></textarea>
+
             <input @click.prevent="dispatchMessage" type="submit" value="send">
+
+
+            <button @click.prevent="dispatchMessage" type="submit">chat</button>
+            <button><a href="index.html">finish a break</a></button>
+
+
         </section>
+
+    </div>
     </main>
 
     <script src="/socket.io/socket.io.js"></script>
