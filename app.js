@@ -1,5 +1,7 @@
 const express = require('express');
+const http = require('http'); // add
 const path = require('path');
+const { isObject } = require('util');
 const messenger = require('socket.io')();
 const app = express();
 
@@ -7,7 +9,7 @@ app.use(express.static("public"));
 
 const port = process.env.PORT || 5050;
 
-app.get("/", (req, res) => {
+app.get("/index", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
 });
 
@@ -36,6 +38,6 @@ messenger.on('connection', (socket) => {
     });
 
     socket.on('disconnect', () => {
-        console.log('a user has disconnected');
+        io.emit('message', 'A user has finished a break')
     })
 });
