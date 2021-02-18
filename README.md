@@ -2,10 +2,9 @@
 
 This chat app is for short brake small chat. You can grab your coffee and chat with cafe friends. Take a break, have coffee, have relaxing chat!
 
-## Installation
+## Requirement
 
-Login page
-Chat room
+Node, Express and Vue with​ ​socket.io​ to create an interactive chat application. Design an engaging skin for the application using HTML / CSS (and SASS); add transitions / interesting micro transactions using a combination of JS and CSS.
 
 ## Usage
 
