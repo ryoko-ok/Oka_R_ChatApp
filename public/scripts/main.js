@@ -24,13 +24,14 @@ import ChatMessage from "./components/TheMessageComponent.js"
             nickname: "",
             username: "",
             socketID: "",
-            message: ""
+            message: "",
         },
 
         created: function() {
             console.log('its alive!!');
         },
 
+        // display chat message
         methods: {
             dispatchMessage() {
                 // debugger;
