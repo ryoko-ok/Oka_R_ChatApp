@@ -1,0 +1,21 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #88c8dd;
+  color: gray;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  display: block;
+  color: white;
+  margin: 1rem 0;
+}
+
+/*# sourceMappingURL=main.css.map */
