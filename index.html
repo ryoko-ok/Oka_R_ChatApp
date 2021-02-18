@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="css/main.css">
     
     <title>My Chat App</title>
+
 </head>
 
 <body>
     <main>
         <div class="mainCon">
             <h1 class="hidden">Small Chat</h1>
+            <h2>Let's talk a little bit during a break</h2>
+
+        <form action="chat.html">
+        <div><input type = "text" name = "name" placeholder = "your name"></div>
+        <div><input type="password" name = "password" placeholder="password"></div>
+
+        <button type = "button" name = "button">Let me chat!</button>
             <h2>Let's talk a little bit for a break</h2>
 
         <form action="chat.html">
@@ -25,6 +33,26 @@
         <!-- temp hack to bypass login -->
         
 
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            
+                var socket = io();
+    
+                socket.emit('joining msg', name);
+    
+                $('form').submit(function(e) {
+                    e.preventDefault();            // will prevent page reloading
+                      socket.emit('chat message', (name + ':  ' + $('#m').val()));
+                            $('#messages').append($('<li id="list">').text('You:  ' + $('#m').val()));
+                      $('#m').val('');
+                      return false;
+                });
+                socket.on('chat message', function(msg){
+                      $('#messages').append($('<li>').text(msg));
+                });
+              
+        </script>
     </main>
 </body>
 </html>
