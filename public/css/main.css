@@ -60,7 +60,6 @@ h2 {
   float: gray;
 }
 
-
 .message-wrapper button {
   width: auto;
   margin: 0;
@@ -79,6 +78,7 @@ h2 {
 }
 
 input, textarea {
+
   padding: 0.7rem;
   margin: 0.6rem;
   color: #333;
@@ -93,11 +93,11 @@ button {
   color: #fff;
   border-radius: 4px;
   width: 300px;
-
   cursor: pointer;
 }
 button:hover {
   background-color: gray;
+
 }
 
 /*# sourceMappingURL=main.css.map */
