@@ -24,6 +24,7 @@ import ChatMessage from "./components/TheMessageComponent.js"
             nickname: "",
             username: "",
             socketID: "",
+            message: ""
 
         },
 
