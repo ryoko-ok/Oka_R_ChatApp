@@ -16,19 +16,19 @@ body {
 
 @keyframes pulse {
   0% {
-    background-color: #FEF9F3;
+    background-color: #F9EFE5;
   }
   25% {
-    background-color: #F9EFE5;
-  }
-  50% {
     background-color: #F3D4D0;
   }
+  50% {
+    background-color: #E8B791;
+  }
   75% {
-    background-color: #F9EFE5;
+    background-color: #F3D4D0;
   }
   100% {
-    background-color: #FEF9F3;
+    background-color: #F9EFE5;
   }
 }
 a {
@@ -61,7 +61,7 @@ h2 {
 }
 
 .mainCon {
-  height: 60%;
+  height: 100vh;
   padding: 5rem;
   text-align: center;
 }
@@ -71,16 +71,15 @@ input {
   margin: 0.6rem;
   color: #333;
   border-radius: 4px;
-  width: 300px;
+  width: 40%;
 }
 
 button {
   background-color: #D2D2CD;
-  padding: 0.7rem;
   margin: 0.6rem;
   color: #fff;
   border-radius: 4px;
-  width: 300px;
+  width: 40%;
 }
 
 /*# sourceMappingURL=main.css.map */

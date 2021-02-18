@@ -1,10 +1,10 @@
 {
-  "name": "ryochatapp",
+  "name": "cafetalk",
   "version": "1.0.0",
   "description": "a fun (in theory) node build",
   "main": "app.js",
   "scripts": {
-    "start-dev": "nodemon app & browser-sync start --proxy 'localhost:5050' --files 'index.html' 'public'",
+    "start-dev": "nodemon app",
     "start-ui": "browser-sync start --proxy 'localhost:5050' --files 'index.html' 'public'",
     "start": "node app"
   },
