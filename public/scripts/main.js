@@ -25,12 +25,14 @@ import ChatMessage from "./components/TheMessageComponent.js"
             username: "",
             socketID: "",
             message: ""
+
         },
 
         created: function() {
             console.log('its alive!!');
         },
 
+        // display chat message
         methods: {
             dispatchMessage() {
                 // debugger;

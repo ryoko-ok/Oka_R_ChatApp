@@ -10,25 +10,21 @@
 
 </head>
 
-<script src = "/socket.io/socket.io.js"></script>
-
-<script>
-    var socket = io();
- </script>
-
-
 <body>
     <main>
         <div class="mainCon">
-            <h1 class="hidden">Small Talk</h1>
-            <h2>Let's talk a little bit for a break</h2>
 
+            <h1 class="hidden">Have a break</h1>
+            <h2>Let's talk a little bit during a break</h2>
+
+        <form action="chat.html">
         <div><input type = "text" name = "name" placeholder = "your name"></div>
         <div><input type="password" name = "password" placeholder="password"></div>
 
-        <button type = "button" name = "button">Let me chat!</button>
+        <button type = "submit" name = "button">Let me chat!</button>
     </div>
         <!-- temp hack to bypass login -->
+        
 
         <script src="/socket.io/socket.io.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
