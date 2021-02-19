@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap" rel="stylesheet">
     
     <title>My Chat App</title>
 
@@ -12,16 +14,16 @@
 
 <body>
     <main>
-        <div class="mainCon">
-
-            <h1 class="hidden">Have a break</h1>
+        <div class="topbar">
+            <h1 class="hidden">Breeze </h1>
             <h2>Let's talk a little bit during a break</h2>
+        </div>
 
-        <form action="chat.html">
-        <div><input type = "text" name = "name" placeholder = "your name"></div>
+        <div class="mainCon">
+        <div><input type = "text" name = "name" placeholder = "your name" required></div>
         <div><input type="password" name = "password" placeholder="password"></div>
 
-        <button type = "submit" name = "button">Let me chat!</button>
+        <button type = "submit" name = "button"><a href="chat">Let me chat!</a></button>
     </div>
         <!-- temp hack to bypass login -->
         

@@ -16,32 +16,34 @@ body {
 
 @keyframes pulse {
   0% {
-    background-color: #FEF9F3;
+    background-color: #D7DBD1;
   }
   25% {
-    background-color: #F9EFE5;
+    background-color: #BBC7BA;
   }
   50% {
-    background-color: #F3D4D0;
+    background-color: #99A89E;
   }
   75% {
-    background-color: #F9EFE5;
+    background-color: #BBC7BA;
   }
   100% {
-    background-color: #FEF9F3;
+    background-color: #D7DBD1;
   }
 }
 a {
   display: block;
   color: white;
-  margin: 1rem 0;
+  text-decoration: none;
 }
 
 h1 {
+  font-family: "Cormorant", serif;
   padding: 10px 0;
 }
 
 h2 {
+  font-family: "Cormorant", serif;
   padding: 20px;
 }
 
@@ -78,7 +80,6 @@ h2 {
 }
 
 input, textarea {
-
   padding: 0.7rem;
   margin: 0.6rem;
   color: #333;
@@ -97,7 +98,148 @@ button {
 }
 button:hover {
   background-color: gray;
+}
 
+h1 {
+  font-family: "Cormorant", serif;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Cormorant", serif;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+.mainCon {
+  height: 60%;
+  padding: 5rem;
+  text-align: center;
+}
+
+input, textarea {
+  padding: 0.7rem;
+  margin: 0.6rem;
+  color: #333;
+  border-radius: 4px;
+  width: 300px;
+}
+
+button {
+  background-color: #D2D2CD;
+  padding: 0.7rem;
+  margin: 0.6rem;
+  color: #fff;
+  border-radius: 4px;
+  width: 300px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: gray;
+}
+
+h1 {
+  padding: 50px 0;
+  font-weight: lighter;
+}
+
+h2 {
+  padding: 20px;
+}
+
+.mainCon {
+  height: 60%;
+  padding: 5rem;
+  text-align: center;
+}
+
+input {
+  padding: 0.7rem;
+  margin: 0.6rem;
+  color: #333;
+  border-radius: 4px;
+  width: 300px;
+}
+
+button {
+  background-color: #D2D2CD;
+  padding: 0.7rem;
+  margin: 0.6rem;
+  color: #fff;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.topbar {
+  text-align: center;
+  color: white;
+  opacity: 90%;
+  width: 100%;
+  padding: 15px;
+  background-color: #ECA4A6;
+}
+
+.chatroom {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.chatroom h2 {
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.new-message {
+  padding: 10px;
+  margin: 5px;
+  background-color: white;
+  color: #807F89;
+  border-radius: 10px;
+  opacity: 30%;
+  float: left;
+  clear: both;
+}
+
+.my-message {
+  background-color: white;
+  color: #807F89;
+  border-radius: 10px;
+  opacity: 30%;
+  float: right;
+  clear: both;
+}
+
+.message-wrapper {
+  align-items: center;
+}
+.message-wrapper input {
+  width: auto;
+  background-color: #ECA4A6;
+}
+.message-wrapper button[type=button] {
+  width: 150px;
+  margin: 0;
+}
+.message-wrapper textarea {
+  color: #333;
+  border-radius: 4px;
+  width: 80%;
+  margin: 0;
+}
+
+.footer {
+  background-color: #F9D5D3;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
