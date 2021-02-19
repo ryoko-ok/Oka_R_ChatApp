@@ -31,10 +31,17 @@ a {
 
 h1 {
     font-family: 'Cormorant', serif;
+    font-size: 50px;
     padding: 10px 0;
+    padding: 50px 0 10px 0;
 }
 
 h2 {
+    font-family: 'Cormorant', serif;
+    padding: 20px;
+}
+
+h3 {
     font-family: 'Cormorant', serif;
     padding: 20px;
 }
@@ -66,15 +73,17 @@ h2 {
         margin: 0;
         border-radius: 4px;
         width: 300px;
-    }
-
-    
+    }  
 }
 
 .mainCon {
     height: 60%;
+    width: 70%;
+    margin: 40px auto;
     padding: 5rem;
     text-align: center;
+
+
 }
 
 input, textarea {
@@ -97,79 +106,6 @@ button {
     &:hover {
         background-color: gray;
     }
-}
-
-h1 {
-    font-family: 'Cormorant', serif;
-    font-size: 50px;
-}
-
-h2 {
-    font-family: 'Cormorant', serif;
-    font-weight: lighter;
-    font-size: 25px;
-}
-
-.mainCon {
-    height: 60%;
-    padding: 5rem;
-    text-align: center;
-}
-
-input, textarea {
-    padding: 0.7rem;
-    margin: 0.6rem;
-    color: #333;
-    border-radius: 4px;
-    width: 300px;
-}
-
-button {
-    background-color: #D2D2CD;
-    padding: 0.7rem;
-    margin: 0.6rem;
-    color: #fff;
-    border-radius: 4px;
-    width: 300px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: gray;
-    }
-}
-
-
-h1 {
-    padding: 50px 0;
-    font-weight: lighter;
-}
-
-h2 {
-    padding: 20px;
-}
-
-
-.mainCon {
-    height: 60%;
-    padding: 5rem;
-    text-align: center;
-}
-
-input {
-    padding: 0.7rem;
-    margin: 0.6rem;
-    color: #333;
-    border-radius: 4px;
-    width: 300px;
-}
-
-button {
-    background-color: #D2D2CD;
-    padding: 0.7rem;
-    margin: 0.6rem;
-    color: #fff;
-    border-radius: 4px;
-    width: 300px;
 }
 
 .topbar {
@@ -179,4 +115,56 @@ button {
     width: 100%;
     padding: 15px;
     background-color: #ECA4A6;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 2;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 2;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+hr.line1{
+    border: 5px solid white;
+}
+hr.line2 {
+    border: 5px solid #F9D5D3;
+}
+hr.line3 {
+    border: 5px solid #ECA4A6;
+}
+
+hr.line4 {
+    border: 5px solid #807F89;
+}
+hr.line5 {
+    border: 5px solid #99A89E;
+}
+hr.line6 {
+    border: 5px solid #BBC7BA;
 }
