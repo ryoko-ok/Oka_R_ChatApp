@@ -76,8 +76,16 @@
     <main id="app">
 
       <div class="topbar">
-         <h2>Chat over a cup of coffee</h2>
+         <hr class="hr-text">
+         <h2>Breath deeply and relax, now you have only sweet word</h2>
       </div>
+      
+      <hr class="line1">
+      <hr class="line2">
+      <hr class="line3">
+      <hr class="line4">
+      <hr class="line5">
+      <hr class="line6">
 
         <div class="mainCon">
         <!-- vue custom message component goes here -->
@@ -91,7 +99,7 @@
         <section class="message-wrapper">
             <textarea v-model="message" class="text-message"></textarea>
             <div>
-               <button @click.prevent="dispatchMessage" type="submit">chat</button>
+               <button @click.prevent="dispatchMessage" type="submit"><img src="public/images/comment.png" alt="">murmur</button>
                <button><a href="/">finish a break</a></button>
             </div>
 
