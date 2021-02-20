@@ -1,9 +1,12 @@
+
 .chatroom {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+    max-width: 1100px;
+    padding: 20px 50px;
+    margin: 30px auto;
+    // display: flex;
+    // flex-direction: column;
     text-align: center;
+    overflow: hidden;
 
     h2 {
         color: white;
@@ -17,21 +20,21 @@
     margin: 5px;
     background-color: white;
     color: #807F89;
-    border-radius: 10px;
     opacity: 80%;
-
     float: left;
     clear: both;
+    border-radius: 30px 30px 30px 0px;
+    word-wrap: normal;
 }
 
 .my-message {
     background-color: #ffefdf;
     color: #8f4a2084;
-    border-radius: 10px;
+    border-radius: 30px 30px 0px 30px;
     opacity: 80%;
     float: right;
     clear: both;
-    
+    word-wrap: normal;
 }
 
 .message-wrapper {

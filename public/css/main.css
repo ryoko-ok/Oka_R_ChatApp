@@ -40,7 +40,6 @@ a {
 h1 {
   font-family: "Cormorant", serif;
   font-size: 50px;
-  padding: 10px 0;
   padding: 50px 0 10px 0;
 }
 
@@ -83,7 +82,7 @@ h3 {
 .mainCon {
   height: 60%;
   width: 70%;
-  margin: 40px auto;
+  margin: auto;
   padding: 5rem;
   text-align: center;
 }
@@ -171,11 +170,11 @@ hr.line6 {
 }
 
 .chatroom {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
+  max-width: 1100px;
+  padding: 20px 50px;
+  margin: 30px auto;
   text-align: center;
+  overflow: hidden;
 }
 .chatroom h2 {
   color: white;
@@ -188,19 +187,21 @@ hr.line6 {
   margin: 5px;
   background-color: white;
   color: #807F89;
-  border-radius: 10px;
   opacity: 80%;
   float: left;
   clear: both;
+  border-radius: 30px 30px 30px 0px;
+  word-wrap: normal;
 }
 
 .my-message {
   background-color: #ffefdf;
   color: #8f4a2084;
-  border-radius: 10px;
+  border-radius: 30px 30px 0px 30px;
   opacity: 80%;
   float: right;
   clear: both;
+  word-wrap: normal;
 }
 
 .message-wrapper {
@@ -230,6 +231,58 @@ hr.line6 {
   width: 100%;
   color: white;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  hr.line1 {
+    border: 2px solid white;
+  }
+
+  hr.line2 {
+    border: 2px solid #F9D5D3;
+  }
+
+  hr.line3 {
+    border: 2px solid #ECA4A6;
+  }
+
+  hr.line4 {
+    border: 2px solid #807F89;
+  }
+
+  hr.line5 {
+    border: 2px solid #99A89E;
+  }
+
+  hr.line6 {
+    border: 2px solid #BBC7BA;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 10px 0 10px 0;
+  }
+
+  .mainCon {
+    padding: 2rem 0;
+  }
+
+  .chatroom {
+    min-width: 250px;
+    padding: 10px;
+  }
+  .chatroom p {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

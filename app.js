@@ -3,6 +3,7 @@ const http = require('http'); // add
 const path = require('path');
 const messenger = require('socket.io')();
 const app = express();
+const chatMessages = document.querySelector('.chatmessages')
 
 app.use(express.static("public"));
 
@@ -30,13 +31,27 @@ messenger.on('connection', (socket) => {
     // send the connected user their assigned ID
     socket.emit('connected', { sID: `${socket.id}`, message: 'new connection'});
 
+    // socket.on('message', message => {
+    //     outputMessage(message);
+    // });
+
+    // show last message automatically
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    // Broadcast when a user connects
+    socket.broadcast.emit('message', 'a user has joined the chat');
+
     socket.on('chatmessage', function(msg) {
         console.log(msg);
         
         messenger.emit('message', { id: socket.id, message: msg });
     });
+    
 
+    // a user leave from chat room
     socket.on('disconnect', () => {
-        io.emit('message', 'A user has finished a break')
-    })
+        // io.emit('message', 'A user has finished a break');
+        // messenger.emit('message', 'a user has finishd a break');
+
+    });
 });
