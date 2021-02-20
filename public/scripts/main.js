@@ -13,6 +13,13 @@ import ChatMessage from "./components/TheMessageComponent.js"
         vm.socketID = sID;
     }
 
+    function setUserName(username) {
+        return {
+            username,
+            time: moment().format('h:mm a')
+        };
+    }
+
     function appendMessage(message) {
         // debugger;
         vm.messages.push(message);
@@ -31,6 +38,10 @@ import ChatMessage from "./components/TheMessageComponent.js"
             console.log('its alive!!');
         },
 
+        joined: function() {
+            console.log(`${user.username}, joined`);
+        },
+
         // // Message from server -- greeting automatically 
         // socket.on('message', message => {
         //     console.log(message);
@@ -44,8 +55,8 @@ import ChatMessage from "./components/TheMessageComponent.js"
                 socket.emit('chatmessage', { content: this.message, name: this.username|| "Anonymous"})
             
             this.message = "";
+            this.username = "";
             }
-
         },
 
         components: {
@@ -55,4 +66,6 @@ import ChatMessage from "./components/TheMessageComponent.js"
 
     socket.addEventListener("connected", setUserId);
     socket.addEventListener('message', appendMessage);
+    socket.addEventListener('username', setUserName);
+
 })();
