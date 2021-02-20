@@ -1,6 +1,6 @@
 # Cafe Chat
 
-This chat app is for short brake small chat. You can grab your coffee and chat with cafe friends. Take a break, have coffee, have relaxing chat!
+People are often use bad or negative words but there are so many beautiful words in this world. Words have impact in your hart. Use beautiful words in this chat and take a break and reflesh your mind. 
 
 ## Requirement
 
@@ -9,8 +9,8 @@ Node, Express and Vue with​ ​socket.io​ to create an interactive chat appl
 ## Usage
 
 Put your user name and password and press "chat".
-You will be in the cafe chat.
-Enjoy chat with cafe friends.
+You will be in the sweet chat.
+Enjoy chat with beautiful words.
 
 ## Contributing
 
