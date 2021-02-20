@@ -1,4 +1,4 @@
-# Cafe Chat
+# Sweet Chat
 
 People are often use bad or negative words but there are so many beautiful words in this world. Words have impact in your hart. Use beautiful words in this chat and take a break and reflesh your mind. 
 
