@@ -31,7 +31,7 @@
 
 
         <div class="mainCon">
-        <div><input type = "text" name = "username" id="username" placeholder = "your name" required></div>
+        <div><input type = "text" name = "username" id="username" placeholder = "your name" onclick="setUsername()" required></div>
         <div><input type="password" name = "password" placeholder="password"></div>
 
         <button type = "submit" name = "button"><a href="chat">Let me chat!</a></button>
@@ -41,7 +41,7 @@
 
         <script src="/socket.io/socket.io.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script>
+        <!-- <script>
             
                 var socket = io();
     
@@ -58,7 +58,7 @@
                       $('#messages').append($('<li>').text(msg));
                 });
               
-        </script>
+        </script> -->
     </main>
 </body>
 </html>
