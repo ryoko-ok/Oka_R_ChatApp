@@ -31,6 +31,12 @@ import ChatMessage from "./components/TheMessageComponent.js"
             console.log('its alive!!');
         },
 
+        // // Message from server -- greeting automatically 
+        // socket.on('message', message => {
+        //     console.log(message);
+        //     outputMessage(message);
+        // });
+
         // display chat message
         methods: {
             dispatchMessage() {

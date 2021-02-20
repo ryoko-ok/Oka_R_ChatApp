@@ -1,0 +1,54 @@
+@media (max-width: 700px) {
+
+    hr.line1{
+        border: 2px solid white;
+    }
+    hr.line2 {
+        border: 2px solid #F9D5D3;
+    }
+    hr.line3 {
+        border: 2px solid #ECA4A6;
+    }
+    
+    hr.line4 {
+        border: 2px solid #807F89;
+    }
+    hr.line5 {
+        border: 2px solid #99A89E;
+    }
+    hr.line6 {
+        border: 2px solid #BBC7BA;
+    }
+
+
+    h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+
+    .footer {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding: 10px 0 10px 0;
+    }
+    
+    .mainCon {
+        padding: 2rem 0;
+    }
+
+    .chatroom {
+        min-width: 250px;
+        padding: 10px;
+
+        p {
+            font-size: 14px;
+        }
+
+    }
+
+
+}
