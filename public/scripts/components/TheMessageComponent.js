@@ -1,5 +1,5 @@
 export default {
-    props: ['msg', 'socketid'],
+    props: ['msg', 'username', 'socketid'],
 
     template:
     `
@@ -11,7 +11,7 @@ export default {
     
     data: function() {
         return {
-            matchedID: this.socketid == this.msg.id
+            matchedID: this.socketid == this.msg.id 
         }
     }
 }
